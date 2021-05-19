@@ -1,5 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
+import '../css/global.css';
+import '../css/layout.css';
 
 function Layout({children}) {
     return (
