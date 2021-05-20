@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@use 'reset';
 
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@200;400;500;600;700&display=swap');
+
 body {
-    margin: 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #333;
+    // background: linear-gradient(to right, #159957, #155799);
 }
-body, a, button {
-    color: black
+main {
+    padding: 20px;
+    border: 10px solid #fff8;
 }

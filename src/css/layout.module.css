@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.navbar .brand {
+  padding: 10px 12px 15px 2px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Dawning of a New Day", cursive;
+  color: black;
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  border-radius: 50%;
+}
+.navbar .brand:hover {
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.navbar .links {
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  border-radius: 15px;
+}
+.navbar .links a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111;
+  background-color: #0003;
+}
+.navbar .links a:hover {
+  color: #000;
+  background-color: #fff2;
+}
+.navbar .links a:first-child {
+  padding-left: 15px;
+  border-radius: 20px 0 0 20px;
+}
+.navbar .links a:last-child {
+  padding-right: 15px;
+  border-radius: 0 20px 20px 0;
+}
+
+/*# sourceMappingURL=layout.module.css.map */

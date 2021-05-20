@@ -1,0 +1,47 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    // background-color: #0008;
+
+    .brand {
+        padding: 10px 12px 15px 2px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Dawning of a New Day', cursive;
+        color: black;
+        background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+        border-radius: 50%;
+    }
+    .brand:hover {
+        opacity: 0.8;
+        border-radius: 10px;
+    }
+    .links {
+        background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb); 
+        border-radius: 15px;
+
+        a {
+            display: inline-block;
+            padding: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #111;
+            background-color: #0003;
+        }
+        a:hover {
+            color: #000;
+            background-color: #fff2;
+        }
+        a:first-child {
+            padding-left: 15px;
+            border-radius: 20px 0 0 20px;
+        }
+        a:last-child {
+            padding-right: 15px;
+            border-radius: 0 20px 20px 0;
+        }
+    }
+}
