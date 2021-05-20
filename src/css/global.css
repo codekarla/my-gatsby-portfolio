@@ -73,12 +73,16 @@ a:hover {
 body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  color: white;
-  background-color: #333;
+  line-height: 1.25;
+  letter-spacing: 0.03rem;
+  color: #ddd;
+  background-color: #222;
 }
 
 main {
+  position: relative;
   padding: 20px;
+  margin: 20px;
   border: 10px solid #fff8;
 }
 

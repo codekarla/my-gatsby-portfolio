@@ -42,4 +42,19 @@
   border-radius: 0 20px 20px 0;
 }
 
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  color: #aaa;
+  background-color: #111;
+}
+.footer span {
+  padding: 5px;
+}
+
 /*# sourceMappingURL=layout.module.css.map */

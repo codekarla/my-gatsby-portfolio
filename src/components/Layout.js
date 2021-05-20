@@ -20,8 +20,10 @@ function Layout({children}) {
 
             {children}
 
-            <footer>
-                Copyright 2021 KV
+            <footer className={style.footer}>
+                <span> Copyright 2021. </span>
+                <span> Karla Leandra Vargas. </span>
+                <span> All rights reserved. </span>
             </footer>
         </div>
     )
