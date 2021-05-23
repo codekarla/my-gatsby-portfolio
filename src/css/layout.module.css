@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 .navbar {
   display: flex;
   align-items: center;
@@ -10,16 +14,22 @@
   font-weight: bold;
   font-family: "Dawning of a New Day", cursive;
   color: black;
-  background: linear-gradient(to right, #1fa2ff -10%, #12d8fa, #a6ffcb 110%);
   border-radius: 50%;
+  background-color: #12d8fa;
+  background: -moz-linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
+  background: -webkit-linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
+  background: linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
 }
 .navbar .brand:hover {
   opacity: 0.8;
   border-radius: 10px;
 }
 .navbar .links {
-  background: linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
   border-radius: 15px;
+  background-color: #12d8fa;
+  background: -moz-linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
+  background: -webkit-linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
+  background: linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
 }
 .navbar .links a {
   display: inline-block;
@@ -47,7 +57,6 @@
   flex-flow: row wrap;
   justify-content: center;
   padding: 30px;
-  margin-top: 30px;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
   color: #aaa;

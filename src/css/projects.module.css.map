@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"projects.module.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/_variables.scss","../sass/projects.module.scss"],"names":[],"mappings":"AAAQ;AACA;ACCR;EACI;EACA;;AAEA;EACI;EACA,aDEK;ECDL;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAEJ;EACI;;AAGR;EACI,ODvBD","file":"projects.module.css"}

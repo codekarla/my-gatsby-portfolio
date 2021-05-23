@@ -11,7 +11,6 @@ function Layout({children}) {
                 <Link to="/" className={style.brand}>
                     <h2>KV</h2>
                 </Link>
-                <h1>Karla Vargas</h1>
                 <div className={style.links}>
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>

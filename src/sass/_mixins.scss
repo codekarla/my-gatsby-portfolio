@@ -1,0 +1,48 @@
+@import 'variables';
+
+@mixin gradient-bg-aqua()
+{
+    background-color: $aqua;
+    background: -moz-linear-gradient(to right, $blue -15%, $aqua, $light-green 115%);
+    background: -webkit-linear-gradient(to right, $blue -15%, $aqua, $light-green 115%);
+    background: linear-gradient(to right, $blue -15%, $aqua, $light-green 115%);
+}
+
+@mixin linear-2gradient($deg, $color1, $color2)
+{
+    background-color: $color1;
+    background: -moz-linear-gradient($deg, $color1, $color2);
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background: linear-gradient($deg, $color1, $color2);
+}
+
+@mixin linear-3gradient($deg, $color1, $color2, $color3)
+{
+    background-color: $color1;
+    background: -moz-linear-gradient($deg, $color1, $color2, $color3);
+    background: -webkit-linear-gradient($deg, $color1, $color2, $color3);
+    background: linear-gradient($deg, $color1, $color2, $color3);
+}
+
+@mixin radial-2gradient($color1, $color2)
+{
+    background-color: $color1;
+    background: -moz-radial-gradient(circle, $color1, $color2);
+    background: -webkit-radial-gradient(circle, $color1, $color2);
+    background: radial-gradient(circle, $color1, $color2);
+}
+
+@mixin radial-3gradient($color1, $color2, $color3)
+{
+    background-color: $color1;
+    background: -moz-radial-gradient(circle, $color1, $color2, $color3);
+    background: -webkit-radial-gradient(circle, $color1, $color2, $color3);
+    background: radial-gradient(circle, $color1, $color2, $color3);
+}
+
+        // clip-path: circle(700px at 100% -11%);
+@mixin clip-circle($radius, $x, $y)
+{
+    clip-path: circle($radius at $x $y);
+    -webkit-clip-path: circle($radius at $x $y);
+}
