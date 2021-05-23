@@ -12,7 +12,7 @@
         font-weight: bold;
         font-family: 'Dawning of a New Day', cursive;
         color: black;
-        background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+        background: linear-gradient(to right, #1fa2ff -10%, #12d8fa, #a6ffcb 110%);
         border-radius: 50%;
     }
     .brand:hover {
@@ -20,7 +20,7 @@
         border-radius: 10px;
     }
     .links {
-        background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb); 
+        background: linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%); 
         border-radius: 15px;
 
         a {

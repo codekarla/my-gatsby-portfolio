@@ -1,17 +1,42 @@
 import React from 'react';
 import Layout from '../../components/Layout';
+import {graphql, Link} from 'gatsby';
 
-function Projects() {
+function Projects({ data }) {
+    const projects = data.allMarkdownRemark.nodes;
+    console.log(projects);
+
     return (<Layout>
         <main>
-            <h1>My Projects</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod minima blanditiis reiciendis nihil laudantium. Aspernatur, ipsam at! Deleniti possimus iste itaque fugiat nobis est nam minima, mollitia harum doloribus! </p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod minima blanditiis reiciendis nihil laudantium. Aspernatur, ipsam at! Deleniti possimus iste itaque fugiat nobis est nam minima, mollitia harum doloribus! </p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod minima blanditiis reiciendis nihil laudantium. Aspernatur, ipsam at! Deleniti possimus iste itaque fugiat nobis est nam minima, mollitia harum doloribus! </p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod minima blanditiis reiciendis nihil laudantium. Aspernatur, ipsam at! Deleniti possimus iste itaque fugiat nobis est nam minima, mollitia harum doloribus! </p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quod minima blanditiis reiciendis nihil laudantium. Aspernatur, ipsam at! Deleniti possimus iste itaque fugiat nobis est nam minima, mollitia harum doloribus! </p>
+            <h2>Portfolio</h2>
+            <h3>Projects & Websites I've Created</h3>
+            <section>
+                { projects.map(proj => <div>
+                    <Link to={`/projects/${proj.frontmatter.slug}`}> 
+                        <h3> {proj.frontmatter.title} </h3>
+                        <p> {proj.frontmatter.stack} </p>
+                    </Link>
+                    
+                </div>) }
+            </section>
         </main>
     </Layout>);
 }
 
-export default Projects
+export default Projects;
+
+// export page query
+export const query = graphql`
+    query ProjectPage {
+        allMarkdownRemark {
+            nodes {
+                id
+                frontmatter {
+                    title
+                    stack
+                    slug
+                }
+            }
+        }
+    }
+`;
