@@ -8,7 +8,7 @@ function Layout({children}) {
         <div>
             <nav className={style.navbar}>
                 
-                <Link to="/" className={style.brand}>
+                <Link to="/" className={style.logo}>
                     <h2>KV</h2>
                 </Link>
                 <div className={style.links}>

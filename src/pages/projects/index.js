@@ -13,7 +13,8 @@ function Projects({ data }) {
             <h3>Projects & Websites I've Created</h3>
             <section className={style.box}>
                 { projects.map(proj => <div>
-                    <Link to={`/projects/${proj.frontmatter.slug}`}> 
+                    {/* <Link to={`/projects/${proj.frontmatter.slug}`}>  */}
+                    <Link to={proj.frontmatter.link} target="_blank">
                         <h3> {proj.frontmatter.title} </h3>
                         <p> {proj.frontmatter.stack} </p>
                     </Link>
@@ -23,7 +24,6 @@ function Projects({ data }) {
         </main>
     </Layout>);
 }
-
 export default Projects;
 
 // export page query
@@ -36,6 +36,7 @@ export const query = graphql`
                     title
                     stack
                     slug
+                    link
                 }
             }
         }

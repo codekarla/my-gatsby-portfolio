@@ -8,7 +8,7 @@
   justify-content: space-between;
   padding: 5px 10px;
 }
-.navbar .brand {
+.navbar .logo {
   padding: 10px 12px 15px 2px;
   font-size: 30px;
   font-weight: bold;
@@ -20,7 +20,7 @@
   background: -webkit-linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
   background: linear-gradient(to right, #1fa2ff -15%, #12d8fa, #a6ffcb 115%);
 }
-.navbar .brand:hover {
+.navbar .logo:hover {
   opacity: 0.8;
   border-radius: 10px;
 }
