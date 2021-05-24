@@ -27,5 +27,9 @@
 .projects .box a:hover p {
   color: #1fa2ff;
 }
+.projects em {
+  font-style: italic;
+  font-size: 0.9rem;
+}
 
 /*# sourceMappingURL=projects.module.css.map */

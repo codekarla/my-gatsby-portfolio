@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import {graphql, Link} from 'gatsby';
+import {Link, graphql} from 'gatsby';
 import * as style from '../../css/projects.module.css';
 
 function Projects({ data }) {
-    const projects = data.allMarkdownRemark.nodes;
-    console.log(projects);
+    const projects = data.projects.nodes;
+    const {contact} = data.metadata.siteMetadata;
+    // console.log(projects);
 
     return (<Layout>
         <main className={style.projects}>
@@ -21,6 +22,9 @@ function Projects({ data }) {
                     
                 </div>) }
             </section>
+            <section>
+                <em>Like what you see? Email me at {contact} to get a quote.</em>
+            </section>
         </main>
     </Layout>);
 }
@@ -29,7 +33,7 @@ export default Projects;
 // export page query
 export const query = graphql`
     query ProjectPage {
-        allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+        projects: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
             nodes {
                 id
                 frontmatter {
@@ -38,6 +42,11 @@ export const query = graphql`
                     slug
                     link
                 }
+            }
+        }
+        metadata: site {
+            siteMetadata {
+                contact
             }
         }
     }

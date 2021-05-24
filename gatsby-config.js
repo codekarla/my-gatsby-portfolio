@@ -19,6 +19,7 @@ module.exports = {
   siteMetadata: {
     title: "Karla Vargas",
     description: "My WebDev Portfolio",
-    copyright: "Copyright 2021. Karla Leandra Vargas"
+    copyright: "Copyright 2021 Karla Vargas.",
+    contact: "karla@email.com"
   }
 }

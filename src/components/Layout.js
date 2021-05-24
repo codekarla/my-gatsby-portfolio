@@ -1,9 +1,22 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import {Link, graphql, useStaticQuery} from 'gatsby';
 import '../css/global.css';
 import * as style from '../css/layout.module.css';
 
 function Layout({children}) {
+    const data = useStaticQuery(graphql`
+        query LayoutQuery {
+            site {
+                siteMetadata {
+                    title
+                    copyright
+                }
+            }
+        }
+    `);
+    // console.log("From Layout:", data);
+    const {copyright} = data.site.siteMetadata;
+
     return (
         <div>
             <nav className={style.navbar}>
@@ -21,8 +34,7 @@ function Layout({children}) {
             {children}
 
             <footer className={style.footer}>
-                <span> Copyright 2021. </span>
-                <span> Karla Leandra Vargas. </span>
+                <span> {copyright} </span>
                 <span> All rights reserved. </span>
             </footer>
         </div>
@@ -30,3 +42,4 @@ function Layout({children}) {
 }
 
 export default Layout;
+
